@@ -1,30 +1,30 @@
-firewall
-routingtable
-hacker
-application
-socket
-protocol
-server
-peertopeer
-cybersecurity
-trojanhorse
-malware
-aliceandbob
-proxyserver
-domainnamesystem
-packet
-ethernet
-internetofthings
-network
-circuitswitching
-transmissioncontrolprotocol
-userdatagramprotocol
-virtualmachine
-roundtriptime
-acknowledgement
-encryption
-ipaddress
-congestion
-flowcontrol
-computerworm
-denialofserviceattack
+firewall, filters network traffic
+routingtable, i help to decide where the packets go
+hacker,i find the issues within a network
+application,a program to carry out a specific task
+socket,a connection between two layers ina  network
+protocol,rules for allowing communication between entities
+server,supplies requested information in a traditional network 
+peertopeer, works as both client and server
+cybersecurity,keeping systems safe from digital attacks
+trojanhorse, i look harmless but have a malicious nature
+malware, i cause disruption in a network 
+aliceandbob,what is cse without these two friends
+proxyserver, intermeditate between end systems and server
+domainnamesystem, phonebook of internet
+packet,small segements of data
+ethernet, hardware to connect systems
+internetofthings, adds device to inert objects
+network,group of computers
+packetswitching, small data being transfered
+transmissioncontrolprotocol,one of the safest method to send data
+userdatagramprotocol,not the safest method to send data
+virtualmachine,gives you the best of multiple os 
+roundtriptime,time taken to establish a connection
+acknowledgement,a message provided when the server recieves data
+encryption,sorry i am hidden!
+ipaddress,this is how a network identifies a computer
+congestion, too much to process
+flowcontrol,please reduce your speed
+computerworm,i replicate and affect the systems
+denialofserviceattack, i shut the network down
