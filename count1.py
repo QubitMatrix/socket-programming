@@ -28,7 +28,7 @@ def get_count():
                 pos_index_tip=lm_list[7]
                 pos_index_knuckle=lm_list[5]
                 pos_thumb_tip=lm_list[4]
-                if(math.fabs(pos_pinky_knuckle[2]-pos_pinky_tip[2])>35):
+                if(math.fabs(pos_pinky_knuckle[2]-pos_pinky_tip[2])>30):
                     count+=1
                 if (math.fabs(pos_ring_knuckle[2] - pos_ring_tip[2]) > 35):
                     count+=1
@@ -36,19 +36,21 @@ def get_count():
                     count+=1
                 if (math.fabs(pos_index_knuckle[2] - pos_index_tip[2]) > 35):
                     count+=1
-                if (math.fabs(pos_ring_knuckle[2] - pos_thumb_tip[2]) > 35):
+                if (math.fabs(pos_index_knuckle[2] - pos_thumb_tip[2]) > 20):
                     count+=1
                 if(count==4):
                     flag+=1
-                if ((count == 2 or count == 5 or count == 0) and flag>10):
-                    return(count)
+                if ((count == 2 or count == 5 or count == 0) and flag > 10):
+                    return (count)
                 cv.putText(frame,str(count),(30,90),cv.FONT_HERSHEY_PLAIN,3,(255,0,255),2)
                 count=0
+
 
             except Exception as e:
                 flag=0
             cv.putText(frame,str(int(fps)),(10,60),cv.FONT_HERSHEY_PLAIN,1,(0,255,0),2)
             cv.imshow("image",frame)
+
             if(cv.waitKey(1) & 0xff==ord('q')):
                 break
         except Exception as e:
@@ -56,4 +58,4 @@ def get_count():
 
     cap.release()
     cv.destroyAllWindows()
-
+#get_count()

@@ -29,8 +29,8 @@ def hangman_fun(word,hint,inp,count):
     print("in hangman.py",ans_space,count)
     if('*' not in ans_space and count<=7):
       count=0
-      return ("You won. The word is "+"".join(ans_space),count)
+      return ("You won. The word is "+word,count)
     if(count==7 and '*' in ans_space):
       count=0
-      return ("You lose",count)
+      return ("You lose. The word is "+word,count)
     return (ans_space,count)
